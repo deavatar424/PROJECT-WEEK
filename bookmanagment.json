@@ -1,0 +1,45 @@
+{
+    "info": {
+      "name": "Book Management System API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item":[
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Register",
+            "request": {
+              "method": "POST",
+              "url": "{{base_url}}/api/auth/register",
+              "body": {
+                "mode": "raw",
+                "raw": "{\"username\":\"testuser\",\"email\":\"test@example.com\",\"password\":\"password123\"}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Login",
+            "request": {
+              "method": "POST",
+              "url": "{{base_url}}/api/auth/login",
+              "body": {
+                "mode": "raw",
+                "raw": "{\"email\":\"test@example.com\",\"password\":\"password123\"}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+}
